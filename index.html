@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Jupriola - Dark Mode</title>
+    <title>Portofolio Website Jupriola</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html { scroll-padding-top: 80px; }
-        /* Scrollbar Keren */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 5px; }
         ::-webkit-scrollbar-thumb:hover { background: #d97706; }
-        
-        /* Ikon kalender jadi putih */
-        ::-webkit-calendar-picker-indicator { filter: invert(1); cursor: pointer; }
     </style>
 </head>
 <body class="bg-black text-gray-300 font-sans flex flex-col min-h-screen">
@@ -61,10 +57,12 @@
 
 
         <section id="profile" class="bg-black border-b border-neutral-900">
+            
             <div class="relative w-full h-64 md:h-80 bg-neutral-900 flex items-center justify-center overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
                      alt="Office Banner" 
                      class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale">
+                
                 <div class="relative z-10 text-center">
                     <h2 class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-wide">MY PROFILE</h2>
                     <div class="w-20 h-1 bg-amber-500 mx-auto rounded"></div>
@@ -72,6 +70,7 @@
             </div>
 
             <div class="container mx-auto px-6 py-20">
+                
                 <div class="flex flex-col md:flex-row items-center gap-10 mb-20">
                     <div class="w-full md:w-1/2">
                         <img src="https://i.pinimg.com/736x/ff/c5/77/ffc577c251b916d81f45b7e2fb87fb17.jpg" 
@@ -88,39 +87,66 @@
                         </p>
 
                         <div class="mt-8 flex flex-wrap gap-4">
-                            <a href="https://www.linkedin.com/in/jupriola-jeskris-soleman-tualaka-05087522a" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-amber-500 transition-all duration-300 font-medium py-2 px-4 border border-neutral-800 rounded-lg hover:border-amber-500">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
-                                <span>LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/jupriola-jeskris-soleman-tualaka-05087522a" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center gap-2 text-gray-400 hover:text-amber-500 transition-all duration-300 font-medium py-2 px-4">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                                </svg>
                             </a>
-                            <a href="https://github.com/riostar2804" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 font-medium py-2 px-4 border border-neutral-800 rounded-lg hover:border-white">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                <span>GitHub</span>
+        
+                            <a href="https://github.com/riostar2804" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center gap-2 text-gray-400 hover:text-amber-500 transition-all duration-300 font-medium py-2 px-4">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 shadow-lg">
+                    <div class="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 shadow-lg hover:shadow-amber-900/10 hover:border-amber-500/30 transition duration-300">
                         <div class="w-12 h-12 bg-neutral-800 rounded-full flex items-center justify-center mb-4 text-amber-500">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-3">Vision</h3>
-                        <p class="text-gray-400">To be a leading technology developer that delivers positive impact through sustainable and creative digital innovation.</p>
+                        <p class="text-gray-400">
+                            To be a leading technology developer that delivers positive impact through sustainable and creative digital innovation.
+                        </p>
                     </div>
 
-                    <div class="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 shadow-lg">
+                    <div class="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 shadow-lg hover:shadow-amber-900/10 hover:border-amber-500/30 transition duration-300">
                         <div class="w-12 h-12 bg-neutral-800 rounded-full flex items-center justify-center mb-4 text-amber-500">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-3">Mission</h3>
                         <ul class="space-y-4">
-                            <li class="flex items-start"><span class="text-gray-400">Developing high-quality, responsive websites.</span></li>
-                            <li class="flex items-start"><span class="text-gray-400">Continuously learning the latest technologies (Learnings).</span></li>
-                            <li class="flex items-start"><span class="text-gray-400">Providing the best solutions for every client issue.</span></li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-neutral-800 flex items-center justify-center mt-0.5 mr-3 border border-neutral-700">
+                                    <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-400">Developing high-quality, responsive websites.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-neutral-800 flex items-center justify-center mt-0.5 mr-3 border border-neutral-700">
+                                    <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-400">Continuously learning the latest technologies (Learnings).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-neutral-800 flex items-center justify-center mt-0.5 mr-3 border border-neutral-700">
+                                    <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-400">Providing the best solutions for every client issue.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -129,14 +155,27 @@
             <h2 class="text-3xl font-bold mb-12 text-white tracking-wide text-center">Portofolio</h2>
             <div class="container mx-auto px-6">
                 <a href="https://cnn-web.pages.dev/dashboard" target="_blank" class="group block bg-neutral-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-amber-500/10 border border-neutral-800 relative transition-all duration-300 transform hover:-translate-y-1 max-w-2xl mx-auto">
+                    
                     <div class="h-64 overflow-hidden relative">
-                        <div class="absolute top-3 right-3 z-10 bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full shadow-sm">IN PROGRESS</div>
-                        <img src="https://i.pinimg.com/736x/40/50/c6/4050c6451055202c97f5503ab84af1eb.jpg" alt="cnn web" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-100">
+                        <div class="absolute top-3 right-3 z-10 bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                            IN PROGRESS
+                        </div>
+
+                        <img src="https://i.pinimg.com/736x/40/50/c6/4050c6451055202c97f5503ab84af1eb.jpg" 
+                             alt="cnn web" 
+                             class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500 opacity-90 group-hover:opacity-100">
+                        
+                        <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-10 transition duration-300"></div>
                     </div>
+
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-amber-500 transition">Road Desctruction Detection System</h3>
                         <p class="text-gray-400 mb-4">This website is currently under development, using CNN technology to detect road damages.</p>
-                        <span class="text-amber-500 font-bold text-sm flex items-center">See Website Preview</span>
+                        
+                        <span class="text-amber-500 font-bold text-sm flex items-center">
+                            See Website Preview
+                            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </span>
                     </div>
                 </a>
             </div>
@@ -145,11 +184,36 @@
         <section id="learning" class="py-20 bg-neutral-900 border-t border-neutral-800">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-12 text-white tracking-wide">Learnings</h2>
+                
                 <div class="flex flex-wrap justify-center items-center gap-10 md:gap-24">
-                    <div class="w-32 h-32 flex items-center justify-center bg-black rounded-full border border-neutral-800 hover:border-amber-500 transition duration-300"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="w-16" alt="React"></div>
-                    <div class="w-32 h-32 flex items-center justify-center bg-black rounded-full border border-neutral-800 hover:border-amber-500 transition duration-300"><img src="https://storage.googleapis.com/cms-storage-bucket/icon_flutter.4fd5520fe28ebf839174.svg" class="w-16" alt="Flutter"></div>
-                    <div class="w-32 h-32 flex items-center justify-center bg-black rounded-full border border-neutral-800 hover:border-amber-500 transition duration-300"><img src="https://www.php.net/images/logos/new-php-logo.svg" class="w-16" alt="PHP"></div>
-                    <div class="w-32 h-32 flex items-center justify-center bg-black rounded-full border border-neutral-800 hover:border-amber-500 transition duration-300"><img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" class="w-16" alt="Python"></div>
+                    <div class="group cursor-pointer">
+                        <div class="w-32 h-32 mx-auto mb-5 flex items-center justify-center bg-black rounded-full border border-neutral-800 group-hover:border-amber-500 group-hover:scale-110 transition duration-300">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" 
+                                 alt="React Logo" 
+                                 class="w-16 h-auto object-contain transition" />
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="w-32 h-32 mx-auto mb-5 flex items-center justify-center bg-black rounded-full border border-neutral-800 group-hover:border-amber-500 group-hover:scale-110 transition duration-300">
+                            <img src="https://storage.googleapis.com/cms-storage-bucket/icon_flutter.4fd5520fe28ebf839174.svg" 
+                                 alt="Flutter Logo" 
+                                 class="w-16 h-auto object-contain transition" />
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="w-32 h-32 mx-auto mb-5 flex items-center justify-center bg-black rounded-full border border-neutral-800 group-hover:border-amber-500 group-hover:scale-110 transition duration-300">
+                            <img src="https://www.php.net/images/logos/new-php-logo.svg" 
+                                 alt="PHP Logo" 
+                                 class="w-16 h-auto object-contain transition" />
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="w-32 h-32 mx-auto mb-5 flex items-center justify-center bg-black rounded-full border border-neutral-800 group-hover:border-amber-500 group-hover:scale-110 transition duration-300">
+                            <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" 
+                                 alt="Python Logo" 
+                                 class="w-16 h-auto object-contain transition" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -159,50 +223,48 @@
                 <h2 class="text-3xl font-bold mb-12 text-center text-white">Message Us</h2>
                 
                 <div class="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto items-start">
-                    
                     <div class="w-full lg:w-1/2 bg-neutral-900 p-8 rounded-2xl shadow-xl border border-neutral-800">
                         <form id="myForm" onsubmit="handleForm(event)">
                             <div class="mb-5">
                                 <label class="block font-bold mb-2 text-gray-300">Full Name</label>
                                 <input type="text" id="input-name" class="w-full bg-black border-2 border-neutral-700 text-white p-3 rounded-lg focus:outline-none focus:border-amber-500 transition" placeholder="Input your name">
-                                <p id="err-name" class="text-red-500 text-sm hidden mt-2">Name must be filled in!</p>
+                                <p id="err-name" class="text-red-500 text-sm hidden mt-2 flex items-center">Name must be filled in!</p>
                             </div>
 
                             <div class="mb-5">
                                 <label class="block font-bold mb-2 text-gray-300">Date of Birth</label>
-                                <input type="date" id="input-dob" class="w-full bg-black border-2 border-neutral-700 text-white p-3 rounded-lg focus:outline-none focus:border-amber-500 transition">
-                                <p id="err-dob" class="text-red-500 text-sm hidden mt-2">Select your date of birth!</p>
+                                <input type="date" id="input-dob" class="w-full bg-black border-2 border-neutral-700 text-white p-3 rounded-lg focus:outline-none focus:border-amber-500 transition [color-scheme:dark]">
+                                <p id="err-dob" class="text-red-500 text-sm hidden mt-2 flex items-center">Select your date of birth!</p>
                             </div>
 
                             <div class="mb-6">
                                 <label class="block font-bold mb-3 text-gray-300">Gender</label>
-                                <div class="flex flex-col sm:flex-row gap-4 p-3 rounded-lg border border-transparent" id="gender-box">
+                                <div class="flex flex-col sm:flex-row gap-4 p-3 rounded-lg border border-transparent transition-all" id="gender-box">
                                     <label class="flex items-center cursor-pointer">
-                                        <input type="radio" name="gender" value="Male" class="w-5 h-5 text-amber-600 focus:ring-amber-500 bg-neutral-800">
+                                        <input type="radio" name="gender" value="Male" class="w-5 h-5 text-amber-600 focus:ring-amber-500 border-gray-600 bg-neutral-800">
                                         <span class="ml-2 text-gray-300 font-medium">Male</span>
                                     </label>
                                     <label class="flex items-center cursor-pointer">
-                                        <input type="radio" name="gender" value="Female" class="w-5 h-5 text-pink-500 focus:ring-pink-500 bg-neutral-800">
+                                        <input type="radio" name="gender" value="Female" class="w-5 h-5 text-pink-500 focus:ring-pink-500 border-gray-600 bg-neutral-800">
                                         <span class="ml-2 text-gray-300 font-medium">Female</span>
                                     </label>
                                 </div>
-                                <p id="err-gender" class="text-red-500 text-sm hidden mt-2 pl-3">Choose gender!</p>
+                                <p id="err-gender" class="text-red-500 text-sm hidden mt-2 flex items-center pl-3">Choose gender!</p>
                             </div>
 
                             <div class="mb-8">
                                 <label class="block font-bold mb-2 text-gray-300">Messages</label>
                                 <textarea id="input-msg" rows="4" class="w-full bg-black border-2 border-neutral-700 text-white p-3 rounded-lg focus:outline-none focus:border-amber-500 transition" placeholder="Write your messages here..."></textarea>
-                                <p id="err-msg" class="text-red-500 text-sm hidden mt-2">Message cannot be empty!</p>
+                                <p id="err-msg" class="text-red-500 text-sm hidden mt-2 flex items-center">Message cannot be empty!</p>
                             </div>
 
-                            <button type="submit" class="w-full bg-amber-600 text-white font-bold py-4 rounded-xl hover:bg-amber-700 transition shadow-lg">Send Messages</button>
+                            <button type="submit" class="w-full bg-amber-600 text-white font-bold py-4 rounded-xl hover:bg-amber-700 transition transform hover:scale-[1.01] shadow-lg hover:shadow-amber-500/20">Send Messages</button>
                         </form>
                     </div>
 
                     <div class="w-full lg:w-1/2 bg-neutral-900 p-8 rounded-2xl shadow-xl border border-neutral-800 h-full relative overflow-hidden">
                         <h3 class="font-bold text-2xl mb-2 text-white">Data Sent</h3>
                         <p class="text-sm text-gray-400 mb-6 flex items-center">Submit Time: <span id="current-time" class="ml-2 font-mono bg-black border border-neutral-700 px-2 py-1 rounded text-amber-500">-</span></p>
-                        
                         <div id="result-box" class="bg-black p-8 rounded-xl border-2 border-dashed border-neutral-700 text-gray-500 min-h-[300px] flex flex-col items-center justify-center gap-4 transition-all duration-500">
                             <p>The data form will appear here...</p>
                         </div>
