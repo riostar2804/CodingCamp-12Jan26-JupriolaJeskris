@@ -56,8 +56,8 @@ function showError(inputElement, errorTextId) {
 
 function resetErrorUI(elName, elDob, elMsg, elGenderBox) {
     [elName, elDob, elMsg].forEach(el => {
-    el.classList.remove("border-red-500", "bg-red-50");
-    el.classList.add("border-gray-200");
+        el.classList.remove("border-red-500", "bg-red-50");
+        el.classList.add("border-gray-200");
     });
     if(elGenderBox) {
         elGenderBox.classList.remove("border-red-500", "bg-red-50");
@@ -69,31 +69,31 @@ function resetErrorUI(elName, elDob, elMsg, elGenderBox) {
 function displayResult(name, dob, gender, msg) {
     updateTime();
     const box = document.getElementById("result-box");
-    box.className = "bg-white p-6 rounded-xl border-2 border-blue-100 shadow-inner h-full flex flex-col justify-start animate-pulse";
+        box.className = "bg-white p-6 rounded-xl border-2 border-blue-100 shadow-inner h-full flex flex-col justify-start animate-pulse";
             
-    box.innerHTML = `
-    <div class="w-full space-y-6 text-left">
-                    <div class="bg-green-50 text-green-800 p-4 rounded-lg flex items-center border border-green-200">
-                        <span class="font-bold">Success! Data received.</span>
+        box.innerHTML = `
+            <div class="w-full space-y-6 text-left">
+                <div class="bg-green-50 text-green-800 p-4 rounded-lg flex items-center border border-green-200">
+                    <span class="font-bold">Success! Data received.</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border">
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Full Name</p>
+                        <p class="text-lg font-bold text-gray-900 break-words">${name}</p>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-gray-50 p-4 rounded-lg border">
-                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Full Name</p>
-                            <p class="text-lg font-bold text-gray-900 break-words">${name}</p>
-                        </div>
-                        <div class="bg-gray-50 p-4 rounded-lg border">
-                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Date of Birth</p>
-                            <p class="text-lg font-bold text-gray-900">${dob}</p>
-                        </div>
-                         <div class="bg-gray-50 p-4 rounded-lg border md:col-span-2">
-                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Gender</p>
-                            <p class="text-lg font-bold text-gray-900">${gender}</p>
-                        </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border">
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Date of Birth</p>
+                        <p class="text-lg font-bold text-gray-900">${dob}</p>
                     </div>
-                    <div>
-                        <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-2">Message</p>
-                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-gray-800 italic">"${msg}"</div>
+                    <div class="bg-gray-50 p-4 rounded-lg border md:col-span-2">
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Gender</p>
+                        <p class="text-lg font-bold text-gray-900">${gender}</p>
                     </div>
                 </div>
-            `;
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-2">Message</p>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-gray-800 italic">"${msg}"</div>
+                </div>
+            </div>
+        `;
 }
